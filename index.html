@@ -1,90 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>失独者</title>
 </head>
-<style >
-    *{
+<style>
+    * {
         margin: 0;
         padding: 0;
     }
-body{
-    font-size: 12px;
-}
-.index{
-    width: 100%;
-    height: 100%;
-    background-color: greenyellow;
-}
-.index .title1{
-    margin-top: 4em;
-    text-align: center;
-    color: #000000;
-    font-family:"Microsoft YaHei";
-    font-size: 1.5em;
-    font-weight: bold;
-    letter-spacing:0.5em;
-    /* word-spacing:1em; */
-}
-.index .title{
-    margin-top: 0.1em;
-    text-align: center;
-    font-size: 4em;
-    font-weight: bold;
-    color: #6A91BC;
-}
-.index .index_content{
-    margin-top: 0.1em;
-    width: 50%;
-    text-align:center;
-    background-color: red;
-}
-.header{
-    margin-top: 4em;
-    width: 100%;
-    height: auto;
-    font-family:"Microsoft YaHei";
-}
-.header_content{
-    width: 100%;
-    height: auto;
-}
-.header_content>p{
-    width: 100%;
-    height:auto;
-    text-align: center;
-    font-size: 1.16em;
-    padding: 0.4em;
-    transform: scaleX(1.01807);
-    font-weight: 350;
-    color: #2C2B2A;
-}
-.header_title{
-    font-size: 1.5em;
-    margin-top: 1.4em;
-    text-align:center;
-    transform: scaleX(1.00281);
-    /* opacity: 0.9; */
-    color: #6A91BC;
-    font-weight: bold;
-}
-.flower{
-    width: 100%;
-    height: 400px;
-    margin-top: 1.4em;
-    background-color: gray;
-}
+
+    body {
+        font-size: 12px;
+        overflow-x:hidden;
+        background-image: '/image/背景.png';
+        background:url('/image/background.png') repeat;
+    }
+
+    .index {
+        width: 100%;
+        height: 100%;
+    }
+
+    .index .title1 {
+        margin-top: 4em;
+        text-align: center;
+        color: #000000;
+        font-family: "Microsoft YaHei";
+        font-size: 1.5em;
+        font-weight: bold;
+        letter-spacing: 0.5em;
+        /* word-spacing:1em; */
+    }
+
+    .index .title {
+        margin-top: 0.1em;
+        text-align: center;
+        font-size: 4em;
+        font-weight: bold;
+        color: #6A91BC;
+    }
+
+    .index .index_content {
+        margin: 0 auto;
+        margin-top: 1em;
+        width: 70%;
+        text-align: left;
+        height: auto;
+        word-wrap: break-word;
+        word-break: break-all;
+        overflow: hidden;
+    }
+    .index .number{
+        width: 100%;
+        height: 100%;
+        margin-top: 0.2em;
+		vertical-align: middle;
+		text-align: center;
+    }
+    .index .index_number{
+        width: 100%;
+        height: 100%;
+        display: none;
+        text-align: center;
+        font-size: 4em;
+        font-weight: bold;
+        color: #6A91BC;
+    }
+    .index img{
+        margin: 0 auto;
+        width: 20%;
+        height: auto;
+        /* display: none; */
+        text-align: center;
+        opacity: 0.7;
+    }
+
+    .header {
+        margin-top: 4em;
+        width: 100%;
+        height: auto;
+        font-family: "Microsoft YaHei";
+    }
+
+    .header_content {
+        width: 100%;
+        height: auto;
+    }
+
+    .header_content>p {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-size: 1.16em;
+        padding: 0.4em;
+        transform: scaleX(1.01807);
+        font-weight: 350;
+        color: #2C2B2A;
+    }
+
+    .header_title {
+        font-size: 1.5em;
+        margin-top: 1.4em;
+        text-align: center;
+        transform: scaleX(1.00281);
+        /* opacity: 0.9; */
+        color: #6A91BC;
+        font-weight: bold;
+    }
+
+    .flower {
+        width: 100%;
+        height: 400px;
+        margin-top: 1.4em;
+        background-color: gray;
+    }
 </style>
+
 <body>
     <div class="index">
         <p class="title1">
             非至痛者无以言
         </p>
         <p class="title">失独者说</p>
-        <div class="index_content">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
-        <p class="index_number">1,020,000</p>
+        <div class="index_content">
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        </div>
+        <div class="number">
+            <p class="index_number">1,020,000</p>
+            <img src="/image/number.png" alt="">
+        </div>
+        
     </div>
     <div class="header">
         <div class="header_content">
@@ -96,10 +144,11 @@ body{
         <h3 class="header_title">点击花朵&nbsp;看看他们的故事</h3>
     </div>
     <div class="flower">
-        
+
     </div>
     <div class="content">
 
     </div>
 </body>
+
 </html>
