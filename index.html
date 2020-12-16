@@ -14,10 +14,56 @@
 
     body {
         font-size: 12px;
-        overflow-x:hidden;
-        background-image: '/image/背景.png';
-        background:url('/image/background.png') repeat;
+        overflow-x: hidden;
+        background: url('/image/background.png') repeat;
     }
+
+    /* @media only screen and (max-width: 360px) {
+        body {
+            font-size: 8px;
+        }
+
+        .flower .imgFlower {
+            width: 6em;
+            height: auto;
+        }
+    } */
+
+    @media only screen and (max-width: 360px) and (min-width:0px) {
+        body {
+            font-size: 8px;
+        }
+
+        /* .flower .imgFlower {
+            width: 3em;
+            height: auto;
+        } */
+
+    }
+
+    @media only screen and (max-width: 720px) and (min-width:361px) {
+        body {
+            font-size: 10px;
+        }
+/* 
+        .flower .imgFlower {
+            width: 4em;
+            height: auto;
+        } */
+    }
+
+    @media only screen and (max-width: 1980px) and (min-width:721px) {
+        body {
+            font-size: 12px;
+        }
+
+        /* .flower .imgFlower {
+            width: 6em;
+            height: auto;
+        } */
+    }
+
+
 
     .index {
         width: 100%;
@@ -53,14 +99,16 @@
         word-break: break-all;
         overflow: hidden;
     }
-    .index .number{
+
+    .index .number {
         width: 100%;
         height: 100%;
         margin-top: 0.2em;
-		vertical-align: middle;
-		text-align: center;
+        vertical-align: middle;
+        text-align: center;
     }
-    .index .index_number{
+
+    .index .index_number {
         width: 100%;
         height: 100%;
         display: none;
@@ -69,7 +117,8 @@
         font-weight: bold;
         color: #6A91BC;
     }
-    .index img{
+
+    .index img {
         margin: 0 auto;
         width: 20%;
         height: auto;
@@ -113,9 +162,97 @@
 
     .flower {
         width: 100%;
-        height: 400px;
-        margin-top: 1.4em;
+        height: 71em;
+        margin-top: 2em;
         background-color: gray;
+        position: relative;
+    }
+
+    /* .flower .content {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        background-color: aqua;
+    } */
+
+    .flower .imgFlower {
+        width: 8em;
+        height: auto;
+    }
+
+    .flower #img1 {
+        position: absolute;
+        top: 1em;
+        left: 22%;
+    }
+
+    .flower #img2 {
+        position: absolute;
+        top: 5em;
+        left: 29.5%;
+    }
+
+    .flower #img3 {
+        position: absolute;
+        top: 0%;
+        left: 39%;
+    }
+
+    .flower #img4 {
+        position: absolute;
+        top: 2em;
+        left: 56%;
+    }
+
+    .flower #img5 {
+        position: absolute;
+        top: 1em;
+        left: 63%;
+    }
+
+    .flower #img6 {
+        position: absolute;
+        top: 15em;
+        left: 16%;
+    }
+
+    .flower #img7 {
+        position: absolute;
+        top: 36%;
+        left: 25%;
+    }
+
+    .flower #img8 {
+        position: absolute;
+        top: 31%;
+        left: 33%;
+    }
+
+    .flower #img9 {
+        position: absolute;
+        top: 35%;
+        left: 59%;
+    }
+
+    .flower #img10 {
+        position: absolute;
+        top: 25%;
+        left: 64.5%;
+    }
+
+    .flower #img11 {
+        position: absolute;
+        top: 19%;
+        left: 69%;
+    }
+
+    .flower #imgContent {
+        position: absolute;
+        width: 30%;
+        height: auto;
+        top: 6.5em;
+        left: 50%;
+        transform: translate(-50%);
     }
 </style>
 
@@ -132,7 +269,7 @@
             <p class="index_number">1,020,000</p>
             <img src="/image/number.png" alt="">
         </div>
-        
+
     </div>
     <div class="header">
         <div class="header_content">
@@ -144,7 +281,31 @@
         <h3 class="header_title">点击花朵&nbsp;看看他们的故事</h3>
     </div>
     <div class="flower">
-
+        <!-- <div class="content"> -->
+        <img src="/image/paper.png" id='imgContent'>
+        <img src="/image/flower1.png" id='img1' class="imgFlower">
+        <img src="/image/flower3.png" id='img2' class="imgFlower">
+        <img src="/image/flower3.png" id='img3' class="imgFlower">
+        <img src="/image/flower1.png" id='img4' class="imgFlower">
+        <img src="/image/flower1.png" id='img5' class="imgFlower">
+        <img src="/image/flower1.png" id='img6' class="imgFlower">
+        <img src="/image/flower3.png" id='img7' class="imgFlower">
+        <img src="/image/flower2.png" id='img8' class="imgFlower">
+        <img src="/image/flower2.png" id='img9' class="imgFlower">
+        <img src="/image/flower2.png" id='img10' class="imgFlower">
+        <img src="/image/flower3.png" id='img11' class="imgFlower">
+        <!--<img src="/image/flower1" id='img1'>
+            <img src="/image/flower1" id='img1'>
+            <img src="/image/flower1" id='img1'>
+            <img src="/image/flower1" id='img1'>
+            <img src="/image/flower1" id='img1'>
+            <img src="/image/flower1" id='img1'>
+            <img src="/image/flower1" id='img1'>
+            <img src="/image/flower1" id='img1'>
+            <img src="/image/flower1" id='img1'>
+            <img src="/image/flower1" id='img1'>
+            <img src="/image/flower1" id='img1'> -->
+        <!-- </div> -->
     </div>
     <div class="content">
 
