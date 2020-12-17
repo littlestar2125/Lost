@@ -16,18 +16,8 @@
         font-size: 12px;
         overflow-x: hidden;
         background: url('/image/background.png') repeat;
+        width: 100vw;
     }
-
-    /* @media only screen and (max-width: 360px) {
-        body {
-            font-size: 8px;
-        }
-
-        .flower .imgFlower {
-            width: 6em;
-            height: auto;
-        }
-    } */
 
     @media only screen and (max-width: 360px) and (min-width:0px) {
         body {
@@ -35,30 +25,30 @@
         }
 
         /* .flower .imgFlower {
-            width: 3em;
+            width: 3rem;
             height: auto;
         } */
 
     }
 
     @media only screen and (max-width: 720px) and (min-width:361px) {
-        body {
+        /* body {
             font-size: 10px;
-        }
+        } */
 /* 
         .flower .imgFlower {
-            width: 4em;
+            width: 4rem;
             height: auto;
         } */
     }
 
     @media only screen and (max-width: 1980px) and (min-width:721px) {
-        body {
+        /* body {
             font-size: 12px;
-        }
+        } */
 
         /* .flower .imgFlower {
-            width: 6em;
+            width: 6rem;
             height: auto;
         } */
     }
@@ -71,39 +61,40 @@
     }
 
     .index .title1 {
-        margin-top: 4em;
+        margin-top: 4rem;
         text-align: center;
         color: #000000;
         font-family: "Microsoft YaHei";
-        font-size: 1.5em;
+        font-size: 1.5rem;
         font-weight: bold;
-        letter-spacing: 0.5em;
-        /* word-spacing:1em; */
+        letter-spacing: 0.5rem;
+        /* word-spacing:1rem; */
     }
 
     .index .title {
-        margin-top: 0.1em;
+        margin-top: 1rem;
         text-align: center;
-        font-size: 4em;
+        font-size: 4rem;
         font-weight: bold;
         color: #6A91BC;
     }
 
     .index .index_content {
         margin: 0 auto;
-        margin-top: 1em;
+        margin-top: 1rem;
         width: 70%;
         text-align: left;
         height: auto;
         word-wrap: break-word;
         word-break: break-all;
         overflow: hidden;
+        font-size: 2rem;
     }
 
     .index .number {
         width: 100%;
         height: 100%;
-        margin-top: 0.2em;
+        margin-top: 1rem;
         vertical-align: middle;
         text-align: center;
     }
@@ -113,7 +104,7 @@
         height: 100%;
         display: none;
         text-align: center;
-        font-size: 4em;
+        font-size: 4rem;
         font-weight: bold;
         color: #6A91BC;
     }
@@ -128,7 +119,7 @@
     }
 
     .header {
-        margin-top: 4em;
+        margin-top: 4rem;
         width: 100%;
         height: auto;
         font-family: "Microsoft YaHei";
@@ -143,16 +134,16 @@
         width: 100%;
         height: auto;
         text-align: center;
-        font-size: 1.16em;
-        padding: 0.4em;
+        font-size: 1.16rem;
+        padding: 0.4rem;
         transform: scaleX(1.01807);
         font-weight: 350;
         color: #2C2B2A;
     }
 
     .header_title {
-        font-size: 1.5em;
-        margin-top: 1.4em;
+        font-size: 1.5rem;
+        margin-top: 1.4rem;
         text-align: center;
         transform: scaleX(1.00281);
         /* opacity: 0.9; */
@@ -162,8 +153,8 @@
 
     .flower {
         width: 100%;
-        height: 71em;
-        margin-top: 2em;
+        height: auto;
+        margin-top: 2rem;
         background-color: gray;
         position: relative;
     }
@@ -176,19 +167,20 @@
     } */
 
     .flower .imgFlower {
-        width: 8em;
+        /* width: calc(100%*0.2); */
+        width: 20%;
         height: auto;
     }
 
     .flower #img1 {
         position: absolute;
-        top: 1em;
-        left: 22%;
+        top: -5%;
+        left: -13rem;
     }
 
     .flower #img2 {
         position: absolute;
-        top: 5em;
+        top: 5rem;
         left: 29.5%;
     }
 
@@ -200,19 +192,19 @@
 
     .flower #img4 {
         position: absolute;
-        top: 2em;
+        top: 2rem;
         left: 56%;
     }
 
     .flower #img5 {
         position: absolute;
-        top: 1em;
+        top: 1rem;
         left: 63%;
     }
 
     .flower #img6 {
         position: absolute;
-        top: 15em;
+        top: 15rem;
         left: 16%;
     }
 
@@ -246,18 +238,28 @@
         left: 69%;
     }
 
-    .flower #imgContent {
+    .flower .imgContent {
         position: absolute;
+        margin-top: 2rem;
         width: 30%;
         height: auto;
-        top: 6.5em;
-        left: 50%;
+        top: 0;
+        left: 50%; 
         transform: translate(-50%);
+        /* background-image:  url('/image/paper.png'); */
+        /* background-position:center; */
+    }
+    .flower #paper{
+        width: 100%;
+        height: auto;
+    }
+    .header,.content{
+        display: none;
     }
 </style>
 
 <body>
-    <div class="index">
+    <div class="index" style="display: block;">
         <p class="title1">
             非至痛者无以言
         </p>
@@ -271,7 +273,7 @@
         </div>
 
     </div>
-    <div class="header">
+    <div class="header" style="display: block;">
         <div class="header_content">
             <p>我们根据发帖数量、吧龄和信息完整度，</p>
             <p>从“失独吧”和“失独者论坛”中整理了三十个失独家庭的故事，</p>
@@ -279,10 +281,9 @@
             <p>信笺上寄托着父母最想和孩子言说的心里话</p>
         </div>
         <h3 class="header_title">点击花朵&nbsp;看看他们的故事</h3>
-    </div>
-    <div class="flower">
-        <!-- <div class="content"> -->
-        <img src="/image/paper.png" id='imgContent'>
+        <div class="flower">
+        <div class="imgContent">
+        <img src="/image/paper.png" id='paper'>
         <img src="/image/flower1.png" id='img1' class="imgFlower">
         <img src="/image/flower3.png" id='img2' class="imgFlower">
         <img src="/image/flower3.png" id='img3' class="imgFlower">
@@ -305,11 +306,62 @@
             <img src="/image/flower1" id='img1'>
             <img src="/image/flower1" id='img1'>
             <img src="/image/flower1" id='img1'> -->
-        <!-- </div> -->
+        </div>
     </div>
-    <div class="content">
+    </div>
+
+    <div class="content" style="display: none;">
 
     </div>
 </body>
+<!-- <script>
+ 
+   window.addEventListener('wheel', function (event) {
+        //或mousewheel。但是他们都不兼容 firefox
+        console.log(event.wheelDelta); //上 120，下 -120
+        // if()
+        // wheelDelta += event.wheelDelta;
+        // console.log(document.body.scrollHeight);
+        console.log(document.getElementsByClassName('index')[0].style.getPropertyValue('display'));
+        console.log(document.getElementsByClassName('header')[0].style);
+        console.log(document.getElementsByClassName('content')[0].style);
+        if(document.getElementsByClassName('index')[0].style.display == 'block' && document.getElementsByClassName('header')[0].style.display == 'none' && document.getElementsByClassName('content')[0].style.display == 'none'){
+            if(event.wheelDelta<0){//向下滚动
+                document.getElementsByClassName('index')[0].style.display = 'none';
+                document.getElementsByClassName('header')[0].style.display = 'block';
+                document.getElementsByClassName('content')[0].style.display = 'none';
+            }
+        }else if(document.getElementsByClassName('index')[0].style.display == 'none' && document.getElementsByClassName('header')[0].style.display == 'block'  && document.getElementsByClassName('content')[0].style.display == 'none'){
+            if(event.wheelDelta<0){//向下滚动
+                document.getElementsByClassName('index')[0].style.display = 'none';
+                document.getElementsByClassName('header')[0].style.display = 'none';
+                document.getElementsByClassName('content')[0].style.display = 'block';
+            }
+            if(event.wheelDelta>0){//向上滚动
+                document.getElementsByClassName('index')[0].style.display = 'block';
+                document.getElementsByClassName('header')[0].style.display = 'none';
+                document.getElementsByClassName('content')[0].style.display = 'none';
+            }
+        }else{
+            if(event.wheelDelta>0){//向上滚动
+                document.getElementsByClassName('index')[0].style.display = 'none';
+                document.getElementsByClassName('header')[0].style.display = 'block';
+                document.getElementsByClassName('content')[0].style.display = 'none';
+            }
+        }
+    
+    }
 
+        // // console.log(document.getElementsByClassName('index')[0].style.height);
+        // if (0<Math.abs(wheelDelta) <= document.body.scrollHeight) {
+        //     document.getElementsByClassName('index')[0].style.display = 'block';
+        //     document.getElementsByClassName('header')[0].style.display = 'none';
+        //     // document.getElementsByClassName('flower')[0].style.display = 'block';
+        // }else if(Math.abs(wheelDelta) >= document.body.scrollHeight) {
+        //     document.getElementsByClassName('index')[0].style.display = 'none';
+        //     document.getElementsByClassName('header')[0].style.display = 'block';
+        //     // document.getElementsByClassName('flower')[0].style.display = 'block';
+        // }
+    )
+</script> -->
 </html>
